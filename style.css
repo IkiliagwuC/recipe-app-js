@@ -23,6 +23,8 @@ body {
 
 .mobile-container {
   width: 400px;
+  background-color: white;
+  border-radius: 1px;
   box-shadow: 0 0 5px #3333331a;
   overflow: hidden;
 }
@@ -61,16 +63,68 @@ header button {
 
 .fav-meals {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style-type: none;
   padding: 0;
 }
 
 .fav-meals li {
+  width: 85px;
 }
 
 .fav-meals li img {
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px 2px #3333331a;
   object-fit: cover;
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+.fav-meals li span {
+  font-size: 0.8rem;
+}
+
+.meal {
+  font-size: 0.9rem;
+  box-shadow: 0 0 10px 2px #3333331a;
+}
+
+.meal header {
+  position: relative;
+}
+
+.meal header .random {
+  position: relative;
+  top: 1px;
+  background-color: white;
+  padding: 0.25rem 1rem;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.meal header img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.meal body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.meal-body h4 {
+  margin: 0;
+}
+
+.meal-body .fav-btn {
+  border: none;
+}
+
+.meal-body.fav-btn.active {
+  color: rebeccapurple;
 }
